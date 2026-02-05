@@ -9,6 +9,7 @@ menggunakan laravel 11, projek sederhana RestApiEcomerce dengan auth JWT
   - users
     - register
     ``` bash
+    Method POST
     http://127.0.0.1:8000/api/auth/register
     ```
     dengan contoh pengisian
@@ -22,8 +23,26 @@ menggunakan laravel 11, projek sederhana RestApiEcomerce dengan auth JWT
     }
     ```
     - login
-    - logout
+    ``` powershell
+    Method POST
+    http://127.0.0.1:8000/api/auth/login
+    ```
+    dengan contoh pengisian
+    ``` json
+    {
+      "email": "customer11@gmail.com",
+      "password": "passwordcoba"
+    }
+    ```
     - get info user yang sudang login
+    ``` 
+    Method GET
+    http://127.0.0.1:8000/api/auth/me?
+
+    dengan menambhkan token Authorization bearer "token"
+    ```
+    
+
   
   -
 
